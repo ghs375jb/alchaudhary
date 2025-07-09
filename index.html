@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AL-CHAUDHARY RENT A Car</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x500/?car,rent') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px black;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .cars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .car {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    .car img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .car h3 {
+      padding: 10px 0;
+    }
+    .car p {
+      padding: 0 10px 10px;
+    }
+    .car button {
+      background: #1e90ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+    .car button:hover {
+      background: #0073e6;
+    }
+    footer {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .contact, .about {
+      text-align: center;
+    }
+    .contact p, .about p {
+      max-width: 800px;
+      margin: auto;
+    }
+  </style>
+  <script>
+    function showPhoneNumber() {
+      alert("Call us for booking:+923434733417");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1><marquee>AL-CHAUDHARY RENT A CAR </marquee></h1>
+    <p>Fast, Affordable, Reliable</p>
+  </header>
+
+  <div class="hero">
+    Book Your Ride Today!<br>
+    WITH AL-CHAUDHARY!</br>
+  </div>
+
+  <section class="section">
+    <h2 style="text-align:center; margin-bottom: 20px;">Available Cars</h2>
+    <div class="cars">
+      <div class="car">
+           <img src="images/kia.jpg" alt="SUV" width="400">
+        <h3>KIA-SPORTAGE</h3>
+        <p>PKR 7,000/day - Automatic, AC, 7 Seater</p>
+         <button onclick="showPhoneNumber()">Book Now</button>
+       
+      </div>
+      <div class="car">
+                  <img src="images/vitz.jpg" alt="Sedan" width="400">
+        <h3>JAPANI-VITZ</h3>
+        <p>PKR 5,000/day - Automatic, AC, 5 Seater</p>
+          <button onclick="showPhoneNumber()">Book Now</button>
+        
+      </div>
+      <div class="car">
+                  <img src="images/wgnor.jpg" alt="Compact" width="400">
+        <h3>SUZUKI-WAGNR</h3>
+        <p>PKR 3,000/day - Manual, AC, Fuel Efficient</p>
+          <button onclick="showPhoneNumber()">Book Now</button>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact">
+    <h2 style="margin-bottom: 20px;">Contact Us</h2>
+    <p>Phone: +92 343 4733417| WhatsApp: +92 343 4733417 | Email: alchaudhary@gmail.com</p>
+  </section>
+
+  <section class="section about">
+    <h2 style="margin-bottom: 20px;">About Us</h2>
+    <p>
+      We provide reliable and affordable car rental services across Pakistan. Whether you're traveling for business or leisure, our wide range of vehicles ensures your comfort and safety on the road.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Rent A Car | All Rights Reserved
+  </footer>
+</body>
+</html>
